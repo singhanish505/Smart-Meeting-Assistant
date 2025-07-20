@@ -160,7 +160,7 @@ def save_meeting_data(meeting_id, meeting_title, transcript, summary, action_ite
 
 st.set_page_config(page_title="Smart Meeting Assistant (MVP)", layout="wide")
 
-st.title("🤖 Smart Meeting Assistant (MVP)")
+st.title("🤖 MemoAI - Smart Meeting Assistant (MVP)")
 st.markdown("Provide meeting details and upload an audio file to get a summary, action items, and key decisions.")
 
 # Input for meeting context (simulating detection/joining)
