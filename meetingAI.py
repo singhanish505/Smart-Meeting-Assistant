@@ -28,7 +28,6 @@ if not client:
     st.error("OpenAI API key not found. Please set the OPENAI_API_KEY environment variable or add it to Streamlit secrets.")
     st.stop()
 
-api_key = client
 
 # Directory to store processed meeting data
 OUTPUT_DIR = "meeting_outputs"
