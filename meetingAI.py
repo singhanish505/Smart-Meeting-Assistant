@@ -1,3 +1,9 @@
+##Meeting Assitant V1.0
+# This is a simple Streamlit app that uses OpenAI's API to transcribe audio files
+# and summarize meeting transcripts, extract action items, and decisions.
+# It simulates the agentic roles of Perception, Reasoning, and Action in a  meeting context.
+#using openai's API
+
 import streamlit as st
 import json
 import os
@@ -9,7 +15,8 @@ from openai import OpenAI
 # Configure logging
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 
-api_key = "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"
+api_key = st.secrets["OPENAI_API_KEY"]
+
 #api_key2 = os.getenv("OPEN_API_KEY")
 client = OpenAI(api_key=api_key)
 #st.secrets["openai"]["api_key"]
